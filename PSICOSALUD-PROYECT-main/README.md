@@ -8,13 +8,9 @@
 
 Esta rama contiene el código cliente de PsicoSalud, diseñado para garantizar rendimiento y una experiencia de usuario fluida.
 
-## Base de datos simulada (sin servicios de pago)
+## Base de datos simulada 
 
-El proyecto ya **no depende de InsForge** ni de ninguna base externa. `src/lib/insforge.js` ahora exporta un cliente simulado (`src/lib/mockDb/`) con la misma interfaz que usaba la app, y los datos se guardan en el `localStorage` del navegador.
 
-- No hace falta `.env.local` ni claves para correr el proyecto: `npm install` y `npm run dev`.
-- Los datos persisten al recargar. Para volver a los datos de ejemplo, en la consola del navegador: `window.__resetMockDb(); location.reload();`
-- Cada navegador tiene su propia copia de los datos.
 
 **Credenciales de prueba**
 
